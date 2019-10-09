@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <title>Form</title>
+      </head>
+      <body>
+      	<h2 class="mx-2">Add New Article</h2>
+      	<form>
+      		<div class="form-group mx-3">
+      			<label for="inputTitle">Title</label>
+      			<input type="text" class="form-control" id="inputTitle" placeholder="Enter title">
+      		</div>
+      		<div class="form-group mx-3">
+      			<label for="inputAuthor">Author</label>
+      			<input type="text" class="form-control" id="inputAuthor" placeholder="Enter author">
+      		</div>
+      		<div class="form-row mx-3">
+      			<div class="col">
+	      			<label for="inputFile">File Upload</label>
+	      			<input type="file" class="form-control-file" id="inputFile">
+      			</div>
+      			<div class="col">
+	      			<label for="inputPages">Pages</label>
+	      			<select class="form-control" id="inputPages">
+				    	<option>1</option>
+				    	<option>2</option>
+				    </select>
+      			</div>
+      		</div>
+      		<div class="form-group mx-3">
+      			<label for="inputContent">Article Text</label>
+    			<textarea class="form-control" id="inputContent" rows="6"></textarea>
+    		</div>
+    		<div class="form-row mx-3">
+    			<div class="col">
+    				<label for="inputTags"><b>Select Tags</b></label><br>
+    				<div class="form-check form-check-inline" id="inputTags">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Python</label>
+					</div>
+					<div class="form-check form-check-inline" id="inputTags">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">C++</label>
+					</div>
+					<div class="form-check form-check-inline" id="inputTags">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Scala</label>
+					</div>
+					<div class="form-check form-check-inline" id="inputTags">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Perl</label>
+					</div>
+					<div class="form-check form-check-inline" id="inputTags">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						<label class="form-check-label" for="inlineCheckbox1">Java</label>
+					</div>
+    			</div>
+    			<div class="col">
+    				<label for="visToggle"><b>Visibility</b></label><br>
+    				<div class="btn-group btn-group-toggle" data-toggle="buttons" id="visToggle">
+					  <label class="btn btn-secondary active">
+					    <input type="radio" name="options" id="option1" autocomplete="off" checked> Public
+					  </label>
+					  <label class="btn btn-secondary">
+					    <input type="radio" name="options" id="option2" autocomplete="off"> Private
+					</div>
+    			</div>
+    		</div>
+    		<div class="form-group mx-3">
+    			<label><b>Login To Submit</b></label>
+    			<div class="row">
+				    <div class="col">
+				      <input type="text" class="form-control" placeholder="Username">
+				    </div>
+				    <div class="col">
+				      <input type="password" class="form-control" placeholder="Password">
+				    </div>
+				  </div>
+    		</div>
+    		<div class="form-group mx-3">
+			    <div class="form-check">
+			      <input class="form-check-input" type="checkbox" id="gridCheck">
+			      <label class="form-check-label" for="gridCheck">
+			        Remember Me
+			      </label>
+			    </div>
+			</div>
+			<button type="submit" class="btn btn-primary mx-3">Submit</button>
+      	</form>
+      </body>
+</html>
